@@ -1,5 +1,6 @@
 mas exercise_08 {
     agent linker_agent
+    // agent linker_agent_solution
 
     asl-path: "src/main/jason"
     java-path: "src/main/cartago"
