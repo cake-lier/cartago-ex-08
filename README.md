@@ -1,18 +1,18 @@
-# JaCaMo Template
+# JaCaMo by exercises — Exercise 08 — Linkability
 
-A template repository for creating new JaCaMo-based applications.
+In this exercise, you'll see the linking mechanism in action i.e., how to execute operations between different artifacts.
+A "LinkedArtifact" needs to expose some operations in its linking interface,
+and it needs to do so using a specific annotation on each operation.
+A "LinkingArtifact" needs to use those operations inside its own operations.
+It can do it in two ways:
+the first one is to declare an "output port"
+through a specific annotation at the artifact class level and then invoke inside it a specific method passing the output port,
+the name of the operation to invoke and its parameters to it.
+For this approach to work, the "linker agent"
+who uses these two artifacts needs to invoke a special method to link the two through the output port.
+The second way is to get the id of the artifact and then use the same method as before to invoke a linked operation, 
+but substitute the artifact id to the output port name.
 
-## What?
+## Solution
 
-Exactly what the title says,
-this is a template repository to create hassle-free JaCaMo applications without starting from scratch.
-You can adjust the "config.jcm" file as you wish to add or remove all the configuration that you need,
-but please **don't** touch the "asl-path", "java-path" and "org-path" properties.
-
-## How to run it?
-
-You can use Gradle to run it,
-either using the Gradle wrapper in the repository or using the Gradle tool installed on your system.
-You don't even need to specify the task name; the default one will launch your application.
-But if you really need to know it, for example, for running it after pressing the "play" button on your preferred IDE,
-add the **run** task to your configurations and see the magic happen!
+All solution files are marked with the "solution" suffix, don't open them before solving the exercise!
