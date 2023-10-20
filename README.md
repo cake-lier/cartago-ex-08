@@ -1,4 +1,4 @@
-# JaCaMo by exercises — Exercise 08 — Linkability
+# CArtAgO by exercises — Exercise 08 — Linkability
 
 In this exercise, you'll see the linking mechanism in action i.e., how to execute operations between different artifacts.
 A "LinkedArtifact" needs to expose some operations in its linking interface,
